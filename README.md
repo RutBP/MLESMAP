@@ -29,41 +29,6 @@ Predictions are transformed back to physical units (cm/s²) during post-processi
 └── 4_Inference.py
 ```
 
-### 1. Hyperparameter Optimization
-
-**File:** `1_GridSearch.py`
-
-Performs hyperparameter optimization using Grid Search and cross-validation, modifying the parameters of n_estimators, max_depth and try_features 
-
-
----
-
-### 2. Model Training
-
-**File:** `2_Train.py`
-
-Trains the Random Forest model using the optimal configuration obtained from the Grid Search stage.
-
-
----
-
-### 3. Model Validation
-
-**File:** `3_Validate.py`
-
-Evaluates the trained model on validation datasets  (unseen data) and computes performance metrics.
-
-
----
-
-### 4. Inference and Ground Shaking Map Generation
-
-**File:** `4_Inference.py`
-
-Applies the trained Random Forest model to generate predictions over the study region and produce ground shaking maps.
-
-
----
 
 ## Dataset Description
 
