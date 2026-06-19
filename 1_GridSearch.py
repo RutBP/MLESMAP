@@ -1,3 +1,20 @@
+"""GRID SEARCH: FIND HYPERPARAMETERS
+As input are needed:
+	- Train database
+	- All database
+The second parameter of block_size is the number of columns
+The parameters to search are:
+	- max_depth: number of levels in each decision tree
+	- n_estimator: number of trees in the forest
+	- try_features: number of features considered for splitting a node
+-----------------------------------------------------------------------------------------------------
+Copyright (c) . All rights reserved.
+BSD 3-CLAUSE or MODIFIED BSD LICENSE
+
+Copyright 2026 Rut Blanco Prieto, Marisol Monterrubio Velasco, Josep de la Puente
+
+"""
+
 from sklearn import datasets
 import pandas as pd
 import dislib as ds
