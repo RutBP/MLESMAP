@@ -82,6 +82,12 @@ This project is licensed under the terms specified in the LICENSE file.
 
 ---
 
+## Data Availability
+
+The datasets used in this project are available upon request. Please contact the authors for further information regarding data access.
+
+---
+
 ## Contact
 
 For questions regarding the methodology, implementation, or data used in this study, please contact rut.blanco@bsc.es.
