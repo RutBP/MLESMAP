@@ -93,7 +93,7 @@ If you use this repository, please cite:
 
 ## License
 
-
+This project is licensed under the terms specified in the LICENSE file.
 
 ---
 
