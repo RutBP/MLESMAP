@@ -11,7 +11,7 @@ Rapid prediction of ground motion is essential for seismic hazard mitigation and
 
 Ground-motion prediction is formulated as a **supervised regression problem**, where earthquake source parameters, source-to-site geometry, and spatial coordinates are used to estimate the corresponding ground-motion intensity for a given earthquake.
 
-The target variable is:
+In this case the target variable is:
 
 * **RotD50** (cm/s²)
 
@@ -24,10 +24,13 @@ Predictions are transformed back to physical units (cm/s²) during post-processi
 
 ```text
 .
-├── 1_GridSearch.py - Main notebook with inferences and visualisations. 
+├── 1_GridSearch.py 
 ├── 2_Train.py
 ├── 3_Validate.py
 └── 4_Inference.py
+└── _search.py
+└── _validation.py
+└── minmax_scaler.py
 ```
 
 
@@ -53,17 +56,12 @@ The Random Forest model uses earthquake source information and source-to-site ge
 
 
 ---
-
 ## Workflow
 
-The complete workflow should be executed in the following order:
-
-```bash
-python 1_GridSearch.py
-python 2_Train.py
-python 3_Validate.py
-python 4_Inference.py
-```
+1. Run `1_GridSearch.py` multiple times with different hyperparameter combinations to find the optimal configuration.
+2. Train the model with `2_Train.py`.
+3. Validate the model with `3_Validate.py`.
+4. Run `4_Inference.py` by specifying the earthquake latitude, longitude, depth and magnitude.
 
 ---
 
@@ -73,21 +71,8 @@ The workflow is implemented using **dislib**, a distributed machine-learning lib
 
 Installation instructions for dislib and PyCOMPSs can be found in the official documentation (https://compss.readthedocs.io/en/latest/Sections/01_Installation_Configuration.html).
 
+To run the workflow successfully, the files `_validation.py`, `_search.py`, and `minmax_scaler.py` must be located in the same directory as the main workflow scripts (`1_GridSearch.py`, `2_Train.py`, `3_Validate.py`, and `4_Inference.py`), since they are imported as local dependencies during execution.
 
-
-## Associated Publication
-
-If you use this repository, please cite:
-
-```bibtex
-@article{AUTHOR_YEAR,
-  title={A Comparative Study of Machine-Learning Strategies for Ground Shaking Maps Applied to Iceland},
-  author={Author(s)},
-  journal={Journal Name},
-  year={YEAR},
-  doi={DOI}
-}
-```
 
 ---
 
