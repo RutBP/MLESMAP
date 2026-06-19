@@ -1,3 +1,15 @@
+""" INFERENCE
+Input files:
+	- Model and scalers
+    - Location, depth and magnitude of the earthquake to be infered
+-----------------------------------------------------------------------------------------
+Copyright (c) . All rights reserved.
+BSD 3-CLAUSE or MODIFIED BSD LICENSE
+
+Copyright 2026 Rut Blanco Prieto, Marisol Monterrubio Velasco, Josep de la Puente.
+"""
+
+
 from dislib.trees import RandomForestRegressor
 import dislib as ds
 import numpy as np
