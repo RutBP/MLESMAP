@@ -1,11 +1,5 @@
 # A Comparative Study of Machine-Learning Strategies for Ground Shaking Maps Applied to Southern Iceland
 
-This repository contains the Python scripts of the Random Forest (RF) workflow developed for the study: A Comparative Study of Machine-Learning Strategies for Ground Shaking Maps Applied to Southern Iceland
-
-Rapid prediction of ground motion is essential for seismic hazard mitigation and emergency response. Traditional ground motion models (GMMs) provide computationally efficient estimates; however, their simplified formulations are often unable to fully capture the complexity of effects related to the source, propagation and site. In this work, we present the application of MLESmap, a machine-learning estimator for ground shaking maps trained on physics-based CyberShake simulations for Southern Iceland. Our objective is to improve the simulation, training and inference processes while reducing computational costs and maintaining predictive accuracy. Accordingly, we evaluate the impact of different training strategies and synthetic database configurations on model perfomance, with particular emphasis on training-data representativeness, database size, features selection and spatial coverage. The results demonstrate the potential of physics-based simulations as a complementary alternative to traditional empirical GMMs. When integrated with machine learning models and when synthetic datasets are properly designed, these simulations can match, and even surpass, results comparable to those obtained from empirical GMM, whilst also maintaining high computational efficiency. 
-
-
----
 
 ## Overview
 
